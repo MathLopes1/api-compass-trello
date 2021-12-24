@@ -48,6 +48,10 @@ class Project {
         }
         await TabelaProject.atualizar(this.id, dadosParaAtualizar)
     }
+    remover(){
+        return TabelaProject.remover(this.id)
+     }
 }
+
 
 module.exports = Project        

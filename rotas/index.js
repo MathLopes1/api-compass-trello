@@ -2,7 +2,7 @@ const roteador = require('express').Router()
 const TabelaProject = require('./tabelaProject')
 const Project = require('./project')
 
-//Ação de listagem
+//Metodo de listagem
 roteador.get('/', async (requisicao, resposta) => {
     const resultados = await TabelaProject.listar()
     resposta.send(
@@ -10,7 +10,7 @@ roteador.get('/', async (requisicao, resposta) => {
     )
 })
 
-//Ação de criação
+//Metodo de criação
 roteador.post('/', async (requisicao, resposta) => {
     const dadosRecebidos = requisicao.body
     const project = new Project(dadosRecebidos)
@@ -20,7 +20,7 @@ roteador.post('/', async (requisicao, resposta) => {
     )
 })
 
-//Ação de captura detalhada
+//Metodo de captura detalhada
 roteador.get('/:idProject', async (requisicao, resposta) => {
     try {
         const id = requisicao.params.idProject
@@ -38,7 +38,8 @@ roteador.get('/:idProject', async (requisicao, resposta) => {
     }
 }
 )
-//Ação para atualizar informações
+
+//Metodo para atualizar informações
 roteador.put('/:idProject', async (requisicao, resposta) => {
     try {
         const id = requisicao.params.idProject
@@ -54,7 +55,25 @@ roteador.put('/:idProject', async (requisicao, resposta) => {
             })
         )
     }
-    
+
 })
+
+///Metodo para deletar 
+roteador.delete('/:idProject', async (requisicao, resposta) => {
+   try{
+    const id = requisicao.params.idProject
+    const project = new Project({ id : id })
+    await project.carregar() 
+    await project.remover()
+   resposta.end()
+   } catch(erro){
+    resposta.send(
+        JSON.stringify({
+           mensagem: erro.message 
+           
+        })
+    )}
+})
+
 
 module.exports = roteador
