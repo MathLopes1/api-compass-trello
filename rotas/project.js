@@ -4,7 +4,7 @@ class Project {
     constructor({ id, title, description, task, createdAt, updatedAt }) {
         this.id = id
         this.title = title
-        this.description = description  
+        this.description = description
         this.task = task
         this.createdAt = createdAt
         this.updatedAt = updatedAt
@@ -31,6 +31,23 @@ class Project {
         this.updatedAt = encontrado.updatedAt
     }
 
+    async atualizar() {
+        await TabelaProject.pegarPorId(this.id)
+        const campos = ['title', 'description','task']
+        const dadosParaAtualizar = {}
+
+        campos.forEach((campo) => {
+            const valor = this[campo]
+            if (typeof valor === 'string' && valor.length > 0){
+                dadosParaAtualizar[campo] = valor
+            }
+        })
+
+        if (Object.keys(dadosParaAtualizar).length === 0){
+            throw new Error('Não foram fornecidos dados para atualizar')
+        }
+        await TabelaProject.atualizar(this.id, dadosParaAtualizar)
+    }
 }
 
 module.exports = Project        

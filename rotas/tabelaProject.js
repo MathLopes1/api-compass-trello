@@ -8,7 +8,7 @@ module.exports = {
     inserir(project) {
         return Modelo.create(project)
     },
-    
+
     async pegarPorId(id) {
         const encontrado = await Modelo.findOne({
             where: {
@@ -20,6 +20,15 @@ module.exports = {
         }
 
         return encontrado
+    },
+
+    atualizar(id,dadosParaAtualizar){
+        return Modelo.update(
+            dadosParaAtualizar,
+            {
+                where: { id: id}
+            }
+        )
     }
 }
 
