@@ -22,6 +22,15 @@ class Project {
         this.updatedAt = resultado.updatedAt
     }
 
+    async carregar() {
+        const encontrado = await TabelaProject.pegarPorId(this.id)
+        this.title = encontrado.title
+        this.description = encontrado.description
+        this.task = encontrado.task
+        this.createdAt = encontrado.createdAt
+        this.updatedAt = encontrado.updatedAt
+    }
+
 }
 
 module.exports = Project        

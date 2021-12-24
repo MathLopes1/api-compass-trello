@@ -1,12 +1,25 @@
 const Modelo = require('./modeloTabela')
 
 module.exports = {
-    listar(){
+    listar() {
         return Modelo.findAll()
     },
 
-    inserir(project){
+    inserir(project) {
         return Modelo.create(project)
-    }
+    },
+    
+    async pegarPorId(id) {
+        const encontrado = await Modelo.findOne({
+            where: {
+                id: id
+            }
+        })
+        if (!encontrado) {
+            throw new Error('Project não encontrado')
+        }
 
+        return encontrado
+    }
 }
+
