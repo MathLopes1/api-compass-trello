@@ -12,12 +12,20 @@ roteador.get('/', async (requisicao, resposta) => {
 
 //Metodo de criação
 roteador.post('/', async (requisicao, resposta) => {
+try{
     const dadosRecebidos = requisicao.body
     const project = new Project(dadosRecebidos)
     await project.criar()
     resposta.send(
         JSON.stringify(project)
     )
+} catch (erro){
+    resposta.send(
+       JSON.stringify({
+           mensagem: erro.message
+       }) 
+     )
+    }
 })
 
 //Metodo de captura detalhada
@@ -70,7 +78,7 @@ roteador.delete('/:idProject', async (requisicao, resposta) => {
     resposta.send(
         JSON.stringify({
            mensagem: erro.message 
-           
+
         })
     )}
 })
