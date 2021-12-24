@@ -5,4 +5,7 @@ const config = require('config')
 
 app.use(bodyParser.json())
 
+const roteador = require ('./rotas')
+app.get('/api/project', roteador)
+
 app.listen(config.get('api.porta'), () => console.log('API Compass - desafio1'))

@@ -1,6 +1,6 @@
 {
     "mysql": {
-        "bando-de-dados": "api_compass",
+        "banco-de-dados": "api_compass",
         "usuario": "root",
         "senha": "matheus86063446@",
         "host": "127.0.0.1"
