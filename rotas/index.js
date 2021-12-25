@@ -22,6 +22,7 @@ try{
         JSON.stringify(project)
     )
 } catch (erro){
+    resposta.status(400)
     resposta.send(
        JSON.stringify({
            mensagem: erro.message
@@ -41,6 +42,7 @@ roteador.get('/:idProject', async (requisicao, resposta) => {
             JSON.stringify(project)
         )
     } catch (erro) {
+        resposta.status(404)
         resposta.send(
             JSON.stringify({
                 mensagem: erro.message
@@ -61,6 +63,7 @@ roteador.put('/:idProject', async (requisicao, resposta) => {
         resposta.status(200)
         resposta.end()
     } catch (erro){
+        resposta.status(404)
         resposta.send(
             JSON.stringify({
                mensagem: erro.message 
@@ -80,6 +83,7 @@ roteador.delete('/:idProject', async (requisicao, resposta) => {
     resposta.status(204)
    resposta.end()
    } catch(erro){
+    resposta.status(404)
     resposta.send(
         JSON.stringify({
            mensagem: erro.message 
