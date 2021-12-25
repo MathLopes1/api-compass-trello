@@ -18,7 +18,7 @@
 </table>
 
 ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas.
-_Segue alguns vídeos curtos para caso tinham dificuldades na instalação._
+* _Segue alguns vídeos curtos para caso tinham dificuldades na instalação._
 * Instalação Postman - https://www.youtube.com/watch?v=CWKLVapcnCU&list=PLNuUvBZGBA8kMTSPMmmNiRm2z0gRxXxox&index=3
 * Instalação Node.Js/NPM - https://www.youtube.com/watch?v=42QuY7rfLTU&list=PLNuUvBZGBA8kMTSPMmmNiRm2z0gRxXxox&index=6
 * Instalação MySQL - https://www.youtube.com/watch?v=zpssr3u1EO8
