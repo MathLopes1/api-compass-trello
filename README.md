@@ -47,9 +47,24 @@ Ex: <br>
 
 ## Testes
 
-Foram totalmente realizados no ambiente automatizado do Postman. comprovando o sucesso de cada funcionalidade. Os testes que foram feitos nesse caso podem ser vistos na figura abaixo, logo na aba a esquerda. O Postman é uma ferramenta extremamente útil para se testar manualmente ou automatizar os testes de qualquer API REST.
+Foram totalmente realizados no ambiente automatizado do Postman. comprovando o sucesso de cada funcionalidade. Os testes que foram feitos nesse caso podem ser vistos na figura abaixo. O Postman é uma ferramenta extremamente útil para se testar manualmente ou automatizar os testes de qualquer API REST.
 
 ![ggggg](https://user-images.githubusercontent.com/70352508/147392624-378977e6-51b6-4e50-9dad-b79e5dc87962.PNG)
+
+## Créditos
+
+Essa API foi desenvolvida e documentada por Matheus Lopes da Silva, no dia 25/12/2021.
+
+## Agradecimentos
+
+Sou extremamente grato aos meus instrutores e líderes de equipe por tudo.
+* Felipe Silva
+* Thais Nicodemus
+* Diego Bueno
+* Bruna Santos
+* Giovanni Hoffmann
+* Gabriel Missio <br>
+Meus agradecimentos se extendem para meus colegas do programa de bolsas, pelo ambiente fantástico e troca de conhecimento.
 
 
 
