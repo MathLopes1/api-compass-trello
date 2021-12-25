@@ -20,16 +20,20 @@
 ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas.
 
 ## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
-
-1- Antes de tudo, rode o comando `npm init` na sua pasta.
-
 As ferramentas foram:
-
 * Express - para baixar
 * Body-parser
 * Config
 * MySql2
 * Sequelize
+
+1. Antes de tudo, rode o comando `npm init` na sua pasta.
+2. Baixe o express em sua pasta rodando o comando `npm install express`.
+3. Baixe o body-parser em sua pasta rodando o comando `npm install body-parser`.
+4. Baixe o Config em sua pasta rodando o comando `npm install config`.
+5. Baixe o MySql2 em sua pasta rodando o comando `npm install mysql2`.
+6. baixe o sequelize em sua pasta rodando o comando `npm install sequelize`.
+
 
 
 
