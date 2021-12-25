@@ -40,6 +40,10 @@ As ferramentas foram:
 5. Baixe o MySql2 em sua pasta rodando o comando `npm install mysql2`.
 6. baixe o sequelize em sua pasta rodando o comando `npm install sequelize`.
 
+# Para Instanciar uma biblioteca na sua aplicação é seguido o mesmo padrão. 
+Ex: <br>
+`const express = require('express')`
+`const app = express()`
 
 
 
