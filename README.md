@@ -17,15 +17,19 @@
   </tr>
 </table>
 
-##### ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas.
+⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas.
 
-#### Além disso, foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
+## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
+
+1- Antes de tudo, rode o comando `npm init` na sua pasta.
 
 As ferramentas foram:
 
-* Express
+* Express - para baixar
 * Body-parser
 * Config
 * MySql2
 * Sequelize
+
+
 
