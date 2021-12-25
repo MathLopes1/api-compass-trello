@@ -45,4 +45,11 @@ Ex: <br>
 `const express = require('express')`<br>
 `const app = express()`
 
+## Testes
+
+Foram totalmente realizados no ambiente automatizado do Postman. comprovando o sucesso de cada funcionalidade. Os testes que foram feitos nesse caso podem ser vistos na figura abaixo, logo na aba a esquerda. O Postman é uma ferramenta extremamente útil para se testar manualmente ou automatizar os testes de qualquer API REST.
+
+![ggggg](https://user-images.githubusercontent.com/70352508/147392624-378977e6-51b6-4e50-9dad-b79e5dc87962.PNG)
+
+
 
