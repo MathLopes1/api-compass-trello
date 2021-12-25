@@ -5,6 +5,7 @@ const Project = require('./project')
 //Metodo de listagem
 roteador.get('/', async (requisicao, resposta) => {
     const resultados = await TabelaProject.listar()
+    resposta.status(200)
     resposta.send(
         JSON.stringify(resultados)
     )
@@ -16,6 +17,7 @@ try{
     const dadosRecebidos = requisicao.body
     const project = new Project(dadosRecebidos)
     await project.criar()
+    resposta.status(201)
     resposta.send(
         JSON.stringify(project)
     )
@@ -34,6 +36,7 @@ roteador.get('/:idProject', async (requisicao, resposta) => {
         const id = requisicao.params.idProject
         const project = new Project({ id: id })
         await project.carregar()
+        resposta.status(200)
         resposta.send(
             JSON.stringify(project)
         )
@@ -55,6 +58,7 @@ roteador.put('/:idProject', async (requisicao, resposta) => {
         const dados = Object.assign({}, dadosRecebidos, { id: id })
         const project = new Project(dados)
         await project.atualizar()
+        resposta.status(200)
         resposta.end()
     } catch (erro){
         resposta.send(
@@ -73,6 +77,7 @@ roteador.delete('/:idProject', async (requisicao, resposta) => {
     const project = new Project({ id : id })
     await project.carregar() 
     await project.remover()
+    resposta.status(204)
    resposta.end()
    } catch(erro){
     resposta.send(
@@ -82,6 +87,7 @@ roteador.delete('/:idProject', async (requisicao, resposta) => {
         })
     )}
 })
+
 
 
 module.exports = roteador
