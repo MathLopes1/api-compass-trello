@@ -27,7 +27,7 @@
 
 ## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
 As ferramentas foram:
-* Express - para baixar
+* Express
 * Body-parser
 * Config
 * MySql2
