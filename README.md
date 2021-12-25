@@ -19,7 +19,7 @@
 
 ##### ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas.
 
-# Além disso, foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
+#### Além disso, foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
 
 As ferramentas foram:
 
