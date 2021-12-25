@@ -42,8 +42,9 @@ As ferramentas foram:
 
 # Para Instanciar uma biblioteca na sua aplicação é seguido o mesmo padrão. 
 Ex: <br>
+<table>
 `const express = require('express')`
 `const app = express()`
-
+</table>
 
 
