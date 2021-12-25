@@ -63,7 +63,8 @@ Sou extremamente grato aos meus instrutores e líderes de equipe por tudo.
 * Diego Bueno
 * Bruna Santos
 * Giovanni Hoffmann
-* Gabriel Missio <br>
+* Gabriel Missio 
+<br>
 Meus agradecimentos se extendem para meus colegas do programa de bolsas, pelo ambiente fantástico e troca de conhecimento.
 
 
