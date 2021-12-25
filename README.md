@@ -17,4 +17,4 @@
   </tr>
 </table>
 
-##⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas ⚠
+## ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas ⚠
