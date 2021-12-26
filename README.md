@@ -29,7 +29,7 @@
 2. Utilizar uma IDE acessar o código. Recomendo o VScode.
 3. Para facilitar o desenvolvido, recomendo a instalação do Nodemon que estará startando as modificações feitas no código automâticamente. Ele pode ser instalado da seguinte forma: <br>
 `npm install nodemon`<br>
-Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código. <br>   
+Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código.<br>
 `"start": "nodemon index.js"`<br>
 Em seguida, dentro da pasta api, abra o terminal e rode o comando:
 `npm start
