@@ -1,9 +1,9 @@
 {
     "mysql": {
-        "banco-de-dados": "api_compass",
-        "usuario": "root",
-        "senha": "matheus86063446@",
-        "host": "127.0.0.1"
+        "banco-de-dados": ,
+        "usuario": ,
+        "senha": ,
+        "host": 
     },
     "api": {
         "porta": 3000

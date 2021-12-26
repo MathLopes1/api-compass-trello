@@ -1,3 +1,4 @@
+const moment = require('moment')
 const TabelaProject = require('./tabelaProject')
 
 class Project {
@@ -34,35 +35,35 @@ class Project {
 
     async atualizar() {
         await TabelaProject.pegarPorId(this.id)
-        const campos = ['title', 'description','task']
+        const campos = ['title', 'description', 'task']
         const dadosParaAtualizar = {}
 
         campos.forEach((campo) => {
             const valor = this[campo]
-            if (typeof valor === 'string' && valor.length > 0){
+            if (typeof valor === 'string' && valor.length > 0) {
                 dadosParaAtualizar[campo] = valor
             }
         })
 
-        if (Object.keys(dadosParaAtualizar).length === 0){
+        if (Object.keys(dadosParaAtualizar).length === 0) {
             throw new Error('Não foram fornecidos dados para atualizar')
         }
         await TabelaProject.atualizar(this.id, dadosParaAtualizar)
     }
-    remover(){
+    remover() {
         return TabelaProject.remover(this.id)
-     }
-     validar(){
-         const campos = ['title', 'description', 'task']
+    }
+    validar() {     
+        const campos = ['title', 'description', 'task']
 
-         campos.forEach( campo => {
-             const valor = this[campo]
+        campos.forEach(campo => {
+            const valor = this[campo]
 
-             if(typeof valor !== 'string' || valor.length === 0){
-                 throw new Error(`O campo '${campo}' está inválido`)
-             }
-         })
-     }
+            if (typeof valor !== 'string' || valor.length === 0) {
+                throw new Error(`O campo '${campo}' está inválido`)
+            }
+        })
+    }
 }
 
 

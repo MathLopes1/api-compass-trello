@@ -1,6 +1,14 @@
-const ModeloTabela = require('../rotas/modeloTabela')
-
-ModeloTabela
-    .sync()
-    .then(() => console.log('Tabela Criada'))
-    .catch(console.log)
+const modelos = [
+    require('../rotas/modeloTabela'),
+    require('../rotas/modeloTabelaTask')
+ ]
+ 
+ //Criando os modelos de Tabelas
+ async function criarTabelas () {
+    for (let i = 0; i < modelos.length; i++) {
+       const modelo = modelos[i]
+       await modelo.sync()
+    }
+ }
+ 
+criarTabelas()

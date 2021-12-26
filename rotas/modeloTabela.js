@@ -19,6 +19,16 @@ const colunas = {
     task: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    createdAt: {
+        type: Sequelize.DATE,
+        field: 'createdAt',
+        allowNull: false
+    },
+    updatedAt: {
+        type: Sequelize.DATE,
+        field: 'updatedAt',
+        allowNull: false
     }
 }
 

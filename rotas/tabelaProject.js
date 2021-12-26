@@ -16,7 +16,7 @@ module.exports = {
             }
         })
         if (!encontrado) {
-            throw new Error('Project não encontrado')
+            throw new Error('Project não foi encontrado')
         }
 
         return encontrado
