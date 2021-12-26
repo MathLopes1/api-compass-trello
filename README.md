@@ -23,7 +23,16 @@
 * Instalação Node.Js/NPM - https://www.youtube.com/watch?v=42QuY7rfLTU&list=PLNuUvBZGBA8kMTSPMmmNiRm2z0gRxXxox&index=6
 * Instalação MySQL - https://www.youtube.com/watch?v=zpssr3u1EO8
 
-
+### ATENÇÂO ⚠
+1. É necessário clonar esse repositório em sua máquina, utilizando o Comando: <br>
+`git clone https://github.com/MathLopes1/api-compass-trello.git` 
+2. Utilizar uma IDE acessar o código. Recomendo o VScode.
+3. Para facilitar o desenvolvido, recomendo a instalação do Nodemon que estará startando as modificações feitas no código automâticamente. Ele pode ser instalado da seguinte forma: <br>
+`npm install nodemon`
+Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código. <br>   
+`"start": "nodemon index.js"`<br>
+Em seguida, dentro da pasta api, abra o terminal e rode o comando:
+`npm start
 
 ## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
 As ferramentas foram:
