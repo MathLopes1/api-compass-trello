@@ -26,8 +26,8 @@
 ### ATENÇÃO ⚠
 1. É necessário clonar esse repositório em sua máquina, utilizando o Comando: <br>
 `git clone https://github.com/MathLopes1/api-compass-trello.git` 
-2. Utilizar uma IDE acessar o código. Recomendo o VScode.
-3. Para facilitar o desenvolvido, recomendo a instalação do Nodemon que estará startando as modificações feitas no código automâticamente. Ele pode ser instalado da seguinte forma: <br>
+2. Utilizar uma IDE para acessar o código. Recomendo o VScode.
+3. Para facilitar o desenvolvimento, recomendo a instalação do Nodemon que estará startando as modificações feitas no código automaticamente. Ele pode ser instalado da seguinte forma: <br>
 `npm install nodemon`<br>
 Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código.<br>
 `"start": "nodemon index.js"`<br>
