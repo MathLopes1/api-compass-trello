@@ -32,7 +32,10 @@
 Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código.<br>
 `"start": "nodemon index.js"`<br>
 Em seguida, dentro da pasta api, abra o terminal e rode o comando:<br>
-`npm start`
+`npm start`<bt>
+ #### Outro aviso importante. No arquivo default.json da pasta config coloque as informações do seu banco de dados para obter sucesso.
+ ![hyyy](https://user-images.githubusercontent.com/70352508/147421603-ea796b91-dc25-4549-92b9-a6fc0b9911f4.PNG)
+
 
 ## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
 As ferramentas foram:
