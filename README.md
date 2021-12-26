@@ -85,7 +85,7 @@ Foram totalmente realizados no ambiente automatizado do Postman. comprovando o s
 
 ## Créditos
 
-Essa API foi elaborado como teste para o programa de bolsas da Compass pelo time responsável. E desenvolvida, documentada por Matheus Lopes da Silva, no dia 25/12/2021.
+Essa API foi elaborada como teste para o programa de bolsas da Compass pelo time responsável.
 
 ## Agradecimentos
 
