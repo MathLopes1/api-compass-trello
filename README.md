@@ -17,7 +17,7 @@
   </tr>
 </table>
 
-⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas. <br>
+#### ⚠ Para obter sucesso em rodar a API, é necessário a instalação das tecnologias utilizadas. <br>
  Segue alguns vídeos curtos para caso tinham dificuldades na instalação:
 * Instalação Postman - https://www.youtube.com/watch?v=CWKLVapcnCU&list=PLNuUvBZGBA8kMTSPMmmNiRm2z0gRxXxox&index=3
 * Instalação Node.Js/NPM - https://www.youtube.com/watch?v=42QuY7rfLTU&list=PLNuUvBZGBA8kMTSPMmmNiRm2z0gRxXxox&index=6
