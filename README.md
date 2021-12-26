@@ -31,8 +31,8 @@
 `npm install nodemon`<br>
 Logo após, vá na pastar Package.json e adicionar na área de "scripts" o seguinte código.<br>
 `"start": "nodemon index.js"`<br>
-Em seguida, dentro da pasta api, abra o terminal e rode o comando:
-`npm start
+Em seguida, dentro da pasta api, abra o terminal e rode o comando:<br>
+`npm start`
 
 ## Foi utilizado o gerencionador de pacotes NPM na instalação de Frameworks para facilitar o desenvolvimento.
 As ferramentas foram:
