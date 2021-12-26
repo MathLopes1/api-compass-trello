@@ -40,10 +40,29 @@ As ferramentas foram:
 5. Baixe o MySql2 em sua pasta rodando o comando `npm install mysql2`.
 6. baixe o sequelize em sua pasta rodando o comando `npm install sequelize`.
 
-# Para Instanciar uma biblioteca na sua aplicação é seguido o mesmo padrão. 
-Ex: <br>
-`const express = require('express')`<br>
-`const app = express()`
+## Rotas
+
+A seguir está uma configuração genérica de local host na porta 3000:
+
+- Listagem de Task - GET: localhost:3000/api/project/
+
+   . Em caso de sucesso retorna todas os Task já cadastradas no banco de dados, cada Task no formato JSON.
+   
+- Adicionar Task - POST: localhost:3000/api/project/adicionar 
+  
+  . Adiciona uma task ao banco de dados, sendo necessário inserir as informações corretamente. O Id é gerado automaticamente.
+  
+- Buscar Task por Id - GET: localhost:3000/api/project/{inserir-id-aqui}
+
+  . Utiliza o Id gerado automaticamente quando a Task é adicionada ao banco de dados. Retorna o arquivo no formato JSON com sucesso caso exista.
+  
+- Atualizar  Task por Id - PUT: localhost:3000/api/project/{inserir-id-aqui}
+
+   . Utilizar o Id cadastrado para atualizar, caso não existe o id correspodente, retornará um erro.
+   
+- Deletar uma Task por Id - DELETE: localhost:3000/api/project/{inserir-id-aqui}
+
+   . Remove a Task utilizando o Id que foi gerado automaticamente, utilizando o método DELETE. 
 
 ## Testes
 
