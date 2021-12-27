@@ -14,14 +14,15 @@ const colunas = {
     type: Sequelize.BOOLEAN,
     allowNull: false
   },
-  tasks: {
+  projectId: {
     type: Sequelize.INTEGER,
-    allowNull: false,
+    onDelete: 'CASCADE',
     references: {
-      model: require('../modeloTabela'),
-      key: 'id'
+    model: require('../modeloTabela'),
+    Key: 'id',
+    as: 'taskId'
     }
-  },
+  }, 
   createdAt: {
     type: Sequelize.DATE,
     field: 'createdAt',

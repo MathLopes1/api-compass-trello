@@ -4,8 +4,11 @@ module.exports = {
     listar(idProject){
         return Modelo.findAll({
             where: {
-                project : idProject
+                ProjectId : idProject
             }
         })
+    },
+    inserir(dados){
+        return Modelo.create(dados)
     }
 }
