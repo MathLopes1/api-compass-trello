@@ -53,6 +53,12 @@ As ferramentas foram:
 5. Baixe o MySql2 em sua pasta rodando o comando `npm install mysql2`.
 6. baixe o sequelize em sua pasta rodando o comando `npm install sequelize`.
 
+## Para criar as Tabelas:
+ Entre na Pasta API. Dentro dela, rode o comando<br>
+ `node database/criarTabelas.js`
+
+  
+  
 ## Rotas
 
 A seguir está uma configuração genérica de local host na porta 3000:
@@ -81,9 +87,10 @@ A seguir está uma configuração genérica de local host na porta 3000:
   Por enquanto, está completo. Mas é possível Adicionar uma Task para um project específico através da relação com ID<bt>
   POST - localhost:3000/api/project/1/tasks/1<br>
   Ex: 
-  `"title": "desenvolver",<br>
-    "taskRelevance": 9,<br>
+  `"title": "desenvolver",
+    "taskRelevance": 9,
     "completed": true`
+  <br>
   É possível listar todas as tasks adicionada a um Id project.
   GET - localhost:3000/api/project/1/tasks/
   
