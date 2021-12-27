@@ -12,11 +12,23 @@ roteador.get('/', async (requisicao, resposta) => {
 roteador.post('/', async (requisicao, resposta) => {
     const idProject = requisicao.params.idProject
     const corpo = requisicao.body
-    const dados = Object.assign({}, corpo, {ProjectId: idProject})
+    const dados = Object.assign({}, corpo, {projectId: idProject})
     const task = new Task(dados)
     await task.criar()
     resposta.status(201)    
     resposta.send(task)
+})
+
+roteador.delete('/:id', async (requisicao, resposta) =>{
+    const dados = {
+        id: requisicao.params.id,
+        task: requisicao.params.projectId
+    }
+
+    const task = new Task(dados)
+    await task.apagar()
+    resposta.status(204)
+    resposta.end()
 })
 
 module.exports = roteador
