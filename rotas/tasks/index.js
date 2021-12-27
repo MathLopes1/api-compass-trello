@@ -4,6 +4,7 @@ const Task = require('./task')
 
 roteador.get('/', async (requisicao, resposta) => {
     const tasks = await Tabela.listar(requisicao.params.idProject)
+    resposta.status(200)
     resposta.send(
         JSON.stringify(tasks)
     )
@@ -22,7 +23,7 @@ roteador.post('/', async (requisicao, resposta) => {
 roteador.delete('/:id', async (requisicao, resposta) =>{
     const dados = {
         id: requisicao.params.id,
-        task: requisicao.params.projectId
+        projectId: requisicao.params.projectId
     }
 
     const task = new Task(dados)

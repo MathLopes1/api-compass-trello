@@ -15,7 +15,7 @@ module.exports = {
         return Modelo.destroy({
             where: {
                id: projectId,
-                projectId: idProject   
+                task: projectId   
             }
         })
     }
