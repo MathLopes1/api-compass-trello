@@ -2,7 +2,7 @@
     "mysql": {
         "banco-de-dados": "api_compass",
         "usuario": "root",
-        "senha": "XXXXX",
+        "senha": "XXXX",
         "host": "127.0.0.1"
     },
     "api": {
