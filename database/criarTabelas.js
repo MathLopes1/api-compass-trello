@@ -1,6 +1,6 @@
 const modelos = [
     require('../rotas/modeloTabela'),
-    require('../rotas/modeloTabelaTask')
+    require('../rotas/tasks/modeloTabelaTask')
  ]
  
  //Criando os modelos de Tabelas

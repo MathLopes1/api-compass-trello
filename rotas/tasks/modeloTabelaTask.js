@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const instancia = require('../database')
+const instancia = require('../../database')
 
 const colunas = {
   title: {
@@ -14,22 +14,22 @@ const colunas = {
     type: Sequelize.BOOLEAN,
     allowNull: false
   },
-  tarefas: {
+  tasks: {
     type: Sequelize.INTEGER,
     allowNull: false,
     references: {
-      model: require('./ModeloTabela'),
+      model: require('../modeloTabela'),
       key: 'id'
     }
   },
   createdAt: {
     type: Sequelize.DATE,
-    field: 'created_at',
+    field: 'createdAt',
     allowNull: false
   },
   updatedAt: {
     type: Sequelize.DATE,
-    field: 'updated_at',
+    field: 'updatedAt',
     allowNull: false
   }
 }
@@ -37,7 +37,7 @@ const colunas = {
 const opcoes = {
   freezeTablename: true,
   tableName: 'tasks',
-  timestamps: false
+  timestamps: true
 }
 
 module.exports = instancia.define('tasks', colunas, opcoes)
