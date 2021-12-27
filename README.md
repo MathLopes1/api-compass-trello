@@ -61,7 +61,7 @@ A seguir está uma configuração genérica de local host na porta 3000:
 
    . Em caso de sucesso retorna todas os Task já cadastradas no banco de dados, cada Task no formato JSON.
    
-- Adicionar Task - POST: localhost:3000/api/project/adicionar 
+- Adicionar uma Task - POST: localhost:3000/api/project/ 
   
   . Adiciona uma task ao banco de dados, sendo necessário inserir as informações corretamente. O Id é gerado automaticamente.
   
