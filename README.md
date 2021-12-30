@@ -82,18 +82,6 @@ A seguir está uma configuração genérica de local host na porta 3000:
 - Deletar uma Task por Id - DELETE: localhost:3000/api/project/{inserir-id-aqui}
 
    . Remove a Task utilizando o Id que foi gerado automaticamente, utilizando o método DELETE. 
-  
-  ## INCOMPLETO
-  Por enquanto, está completo. Mas é possível Adicionar uma Task para um project específico através da relação com ID<bt>
-  POST - localhost:3000/api/project/1/tasks/1<br>
-  Ex: 
-  `"title": "desenvolver",
-    "taskRelevance": 9,
-    "completed": true`
-  <br>
-  É possível listar todas as tasks adicionada a um Id project.
-  GET - localhost:3000/api/project/1/tasks/
-  
 
 ## Testes
 
